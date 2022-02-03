@@ -31,7 +31,7 @@ github_username:  stevenfangcu
 linkedin_username: steven-fang
 
 # Build settings
-theme: jekyll-theme-midnight
+theme: minima
 plugins:
   - jekyll-feed
 
