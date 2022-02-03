@@ -1,12 +1,7 @@
 ---
 layout: page
 title: Home
+permalink:
 ---
 
-<A href='/about/'>About</A>
-
-<A href='/Resume'>Resume</A>
-
-<A href=''>Projects</A>
-
-<A href='/Contact'>Contact<A>
+### Welcome to my Website! ###
