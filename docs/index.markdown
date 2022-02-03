@@ -1,8 +1,12 @@
 ---
-layout: home
+layout: default
 title: Home
 ---
 
 ## **Synopsis** ##
 
-![an image alt text]({{ site.baseurl }}/images/canada.png "canada-flag")
+<A href='/about/'>About</A>
+
+<A href='/Resume'>Resume</A>
+
+<A href=''>Projects</A>

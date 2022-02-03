@@ -18,20 +18,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Steven Fang
+title: Software Developer
 email: stevenfangcu@icloud.com
 description: >- # this means to ignore newlines until "baseurl:"
   I am an Automation and Software Developer, currently living in Toronto, ON, Canada. 
   I have a Bachelors of Science in Computer Science from Carleton University. 
   My primary focus and inspiration for my studies is full-stack and web development.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://github.com/stevenfangcu/stevenfangcu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  stevenfangcu
 linkedin_username: steven-fang
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
