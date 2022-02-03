@@ -18,7 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Software Developer
+title: My Website
+author: Steven Fang
+avatar: "/images/canada.png"
+round-avatar: true
+timezone: "Canada/Toronto"
 email: stevenfangcu@icloud.com
 description: >- # this means to ignore newlines until "baseurl:"
   I am an Automation and Software Developer, currently living in Toronto, ON, Canada. 
@@ -28,7 +32,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  stevenfangcu
 linkedin_username: steven-fang
-
 # Build settings
 theme: minima
 plugins:
