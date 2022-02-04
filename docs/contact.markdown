@@ -4,4 +4,6 @@ title: Contact
 permalink: /Contact/
 ---
 
-Contact
+<span style="color:blue">Contact Information</span>.
+
+This page is in development :) 
