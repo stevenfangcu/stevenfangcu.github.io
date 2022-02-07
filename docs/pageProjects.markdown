@@ -6,4 +6,4 @@ permalink: /Project/
 
 This page is in development :) 
 
-![an image alt text]({{ site.baseurl }}/images/GenshinWebsite.png "project-genshin")
+![Genshin-app](/images/GenshinWebsite.png){:width="50%"} 

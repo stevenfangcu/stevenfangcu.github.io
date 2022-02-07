@@ -18,16 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: My Website
+title: stevenfangcu
 author: Steven Fang
-avatar: "/images/canada.png"
-round-avatar: true
-timezone: "Canada/Toronto"
 email: stevenfangcu@icloud.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I am an Automation and Software Developer, currently living in Toronto, ON, Canada. 
-  I have a Bachelors of Science in Computer Science from Carleton University. 
+  I am an Automation and Software Developer.
+  Graduated from Carleton University with a  Bachelors of Science in Computer Science. 
   My primary focus and inspiration for my studies is full-stack and web development.
+  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  stevenfangcu
@@ -36,6 +34,9 @@ linkedin_username: steven-fang
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
