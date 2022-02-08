@@ -2,9 +2,14 @@
 layout: default
 title: About
 permalink:
+
 ---
 
-### Education ### 
+<script src="/javascript/home.js"></script>
+
+<h3 style="font-style:bold; font-weight:900;"> Education </h3>
+
+<a id="alert" href="" onclick="AlertFunction();return false;">Alert</a>
 
 ![carleton](/images/carleton-uni.png){:width="50px"} Graduate from Carleton University with a Bachelors in Computer Science.  
 
@@ -16,7 +21,7 @@ My current interests:
 * Automation
 * Machine Learning
 
-### Internship Experience ###
+<h3 style="font-style:bold; font-weight:900;"> Internship Experience </h3>
 
 #### ![national-defence](/images/national-defence.jpg){:width="150px"} Department of National Defence -- DRDC![DRDC](/images/DRDC.jpg){:width="100px" height="80px"} ####
 
