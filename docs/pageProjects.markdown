@@ -10,8 +10,8 @@ permalink: /Project/
 This page is in development :) 
 
 <div>
-    <ul>
-        <li>
+    <ul class="imageul">
+        <li class="imageli">
             <a href="https://github.com/stevenfangcu/GeshinImpactApp">
                 <img src="/images/GenshinWebsite.png" class="small-image">
             </a>
@@ -20,7 +20,7 @@ This page is in development :)
                     <img src="/images/GenshinWebsite.png" class="large-image">
                 </a>
             </span>
-            A *CRUD* Website built with Ruby on Rails and ReactJS.
+            A CRUD Website built with Ruby on Rails and ReactJS.
         </li>
     </ul>
 </div>

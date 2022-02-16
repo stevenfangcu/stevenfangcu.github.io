@@ -1,8 +1,8 @@
-ul {
+.imageul {
     display: flex;
 }
 
-li {
+.imageli {
     list-style-type: none;
     padding: 10px;
     position: relative;
