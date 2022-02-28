@@ -23,5 +23,7 @@ This page is in development :)
             A CRUD Website built with Ruby on Rails and ReactJS.
         </li>
     </ul>
-    <a href="/pageWeather.html" >WeatherApi</a>
+    <ul class="imageul">
+          <a href="/pageWeather.html" >WeatherApi</a>
+    </ul>
 </div>

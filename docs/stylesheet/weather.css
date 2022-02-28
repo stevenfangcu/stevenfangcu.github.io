@@ -16,3 +16,8 @@
 img { 
     float: left;
 }
+
+#development{
+    text-align: center;
+    color: red;
+}
