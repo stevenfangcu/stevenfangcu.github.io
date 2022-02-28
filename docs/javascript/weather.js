@@ -10,7 +10,7 @@ var responseData;
 // async method to fetch api during onload
 async function awaitFetchWeatherAPI(){
     try{    
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=Toronto&APPID=bd18e4fb564236a97392f3596ceede8d`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Toronto&APPID=bd18e4fb564236a97392f3596ceede8d`);
         // await to make sure the api call is finished before assigning it to the global scope variable
         const resp = await response.json();
         this.temp = conversion(resp['main']['temp']);
@@ -29,7 +29,7 @@ async function awaitFetchWeatherAPI(){
 function weatherAPI(){
     awaitFetchWeatherAPI();
     // fetch weather api 
-    let url = "http://api.openweathermap.org/data/2.5/weather?q=Toronto&APPID=bd18e4fb564236a97392f3596ceede8d";
+    let url = "https://api.openweathermap.org/data/2.5/weather?q=Toronto&APPID=bd18e4fb564236a97392f3596ceede8d";
     fetch(url)
     .then(response => response.json())
     .then(data => {
