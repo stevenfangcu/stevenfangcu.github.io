@@ -1,13 +1,14 @@
 <script src="/javascript/weather.js"></script>
+<link href="/stylesheet/weather.css" rel="stylesheet">
 
 <html lang="en">
-    <body onload="fetchWeatherAPI()">
-        <button onclick="weatherAPI()">Weather!</button>
+    <body onload="awaitFetchWeatherAPI()">
+        <h1 id="city" class="weatherHeader"></h1>
         <div class="container">
-            <p id="city"></p>
-            <p id="temp"></p>
-            <p id="howItlooksLike"></p>
             <img src="" id="weatherToday"/>
+            <p id="temp" class="weatherBody"></p>
+            <p id="howItlooksLike" class="weatherBody"></span>
         </div>
+        <button onclick="weatherAPI()">Weather!</button>
     </body>
 </html>

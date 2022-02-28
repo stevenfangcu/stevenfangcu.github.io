@@ -8,16 +8,17 @@ var city = ""
 var responseData;
 
 // async method to fetch api during onload
-async function fetchWeatherAPI(){
+async function awaitFetchWeatherAPI(){
     try{    
         const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=Toronto&APPID=bd18e4fb564236a97392f3596ceede8d`);
         // await to make sure the api call is finished before assigning it to the global scope variable
         const resp = await response.json();
-        this.temp = resp['main']['temp'];
-        this.city = resp['name'];
+        this.temp = conversion(resp['main']['temp']);
+        this.city = resp['name'] + ',' + (resp['sys']['country']);
         this.chanceOfWeather = resp['weather'][0]['description'];
         console.log(this.temp);
         console.log(resp);
+        populateStats();
         return resp;
     }catch(err){
         console.log(err);
@@ -26,7 +27,7 @@ async function fetchWeatherAPI(){
 
 // fetch method to fetch api during onclick
 function weatherAPI(){
-    fetchWeatherAPI();
+    awaitFetchWeatherAPI();
     // fetch weather api 
     let url = "http://api.openweathermap.org/data/2.5/weather?q=Toronto&APPID=bd18e4fb564236a97392f3596ceede8d";
     fetch(url)
@@ -49,7 +50,8 @@ function populateWeatherImage(temp){
 function populateStats(){
     document.querySelector('#city').innerHTML = this.city;
     document.querySelector('#temp').innerHTML = this.temp;
-    document.querySelector('#howItlooksLike').innerHTML = this.chanceOfWeather;
+    document.querySelector('#howItlooksLike').innerHTML = "Looking like a " + this.chanceOfWeather;
+    document.querySelector('#weatherToday').src = "/images/weather/cloudy.png"
 }
 
 function conversion(val){

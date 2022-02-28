@@ -1,0 +1,18 @@
+#weatherToday{
+    border-radius: 50%;
+    height: 15%;
+    width: 15%;
+}
+
+.weatherHeader{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.weatherBody{
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 1%;
+}
+img { 
+    float: left;
+}
