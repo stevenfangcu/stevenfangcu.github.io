@@ -9,8 +9,6 @@ permalink:
 
 <h3 style="font-style:bold; font-weight:900;"> Education </h3>
 
-<a id="alert" href="" onclick="AlertFunction();return false;">Alert</a>
-
 ![carleton](/images/carleton-uni.png){:width="50px"} Graduate from Carleton University with a Bachelors in Computer Science.  
 
 My current interests: 
