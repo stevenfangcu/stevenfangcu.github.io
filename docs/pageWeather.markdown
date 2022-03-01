@@ -9,6 +9,9 @@
             <img src="" id="weatherToday"/>
             <p id="temp" class="weatherBody"></p>
             <p id="howItlooksLike" class="weatherBody"></p>
+            <div class="subcontainer">
+                <p id="wind" class="weatherBody"></p>
+            </div>
             <button onclick="weatherAPI()">Weather!</button>
         </div>
     </body>

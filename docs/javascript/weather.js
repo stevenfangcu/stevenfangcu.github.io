@@ -6,6 +6,8 @@ var temp = 0;
 var chanceOfWeather = ""
 var city = ""
 var responseData;
+var wind = "";
+var directionOfWind = "";
 
 // async method to fetch api during onload
 async function awaitFetchWeatherAPI(){
@@ -16,6 +18,8 @@ async function awaitFetchWeatherAPI(){
         this.temp = conversion(resp['main']['temp']);
         this.city = resp['name'] + ',' + (resp['sys']['country']);
         this.chanceOfWeather = resp['weather'][0]['description'];
+        this.wind = resp['wind']['speed'];
+        this.directionOfWind = resp['wind']['deg'];
         console.log(this.temp);
         console.log(resp);
         populateStats();
@@ -49,11 +53,22 @@ function populateWeatherImage(temp){
 }
 function populateStats(){
     document.querySelector('#city').innerHTML = this.city;
-    document.querySelector('#temp').innerHTML = this.temp;
-    document.querySelector('#howItlooksLike').innerHTML = "Looking like a " + this.chanceOfWeather;
+    document.querySelector('#temp').innerHTML = "Temp: " + this.temp;
+    document.querySelector('#howItlooksLike').innerHTML = "Looking like a chance of " + this.chanceOfWeather;
+    document.querySelector('#wind').innerHTML = "wind: " + this.wind + "meter/s. =>" + windDirection(this.directionOfWind);
     document.querySelector('#weatherToday').src = "/images/weather/cloudy.png"
 }
 
+
 function conversion(val){
     return (val-273).toFixed(1)
+}
+
+function windDirection(angle){
+    var directions = ["North", "North-North-East", "North-East","North-East-East", 
+    "East","South-East-East", "South-East", "South-South-East",
+    "South","South-South-West", "South-West","South-West-West", 
+    "West", "North-West-West", "North-West", "North-North-West"];
+    var index = Math.round(((angle %= 360) < 0 ? angle + 360 : angle) / 22.5) % 16;
+    return directions[index];
 }
