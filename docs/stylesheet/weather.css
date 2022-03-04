@@ -4,6 +4,15 @@
     width: 15%;
 }
 
+#weatherWindToday{
+    border-radius: 0%;
+    height: 5%;
+    width: 5%;
+    float: none;
+}
+#wind{
+    display: inline-block;
+}
 .weatherHeader{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
@@ -12,6 +21,7 @@
     text-align: left;
     font-family: 'Courier New', Courier, monospace;
     padding-top: 1%;
+    display: -webkit-box;
 }
 img { 
     float: left;

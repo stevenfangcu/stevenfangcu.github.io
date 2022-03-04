@@ -52,23 +52,26 @@ function populateWeatherImage(temp){
     console.log(this.temp);
 }
 function populateStats(){
-    document.querySelector('#city').innerHTML = this.city;
-    document.querySelector('#temp').innerHTML = "Temp: " + this.temp;
-    document.querySelector('#howItlooksLike').innerHTML = "Looking like a chance of " + this.chanceOfWeather;
-    document.querySelector('#wind').innerHTML = "wind: " + this.wind + "meter/s. =>" + windDirection(this.directionOfWind);
-    document.querySelector('#weatherToday').src = "/images/weather/cloudy.png"
+    document.querySelector('#city').innerHTML = `${this.city}`;
+    document.querySelector('#temp').innerHTML = `Temperature: ${this.temp}`;
+    document.querySelector('#howItlooksLike').innerHTML = `Looking like a chance of  ${this.chanceOfWeather}`;
+    document.querySelector('#wind').innerHTML = `wind: ${this.wind} meter/s. towards ${windDirection(this.directionOfWind)}`;
+    document.querySelector('#weatherWindToday').src = "/images/weather/arrow.png";
+    document.querySelector('#weatherToday').src = "/images/weather/cloudy.png";
 }
 
-
+// conversion from Kelvin to Degrees
 function conversion(val){
-    return (val-273).toFixed(1)
+    return (val-273).toFixed(1);
 }
-
+// converting direction from degrees to user readable
 function windDirection(angle){
     var directions = ["North", "North-North-East", "North-East","North-East-East", 
     "East","South-East-East", "South-East", "South-South-East",
     "South","South-South-West", "South-West","South-West-West", 
     "West", "North-West-West", "North-West", "North-North-West"];
     var index = Math.round(((angle %= 360) < 0 ? angle + 360 : angle) / 22.5) % 16;
+    console.log(`${angle+90}`);
+    document.querySelector('#weatherWindToday').style.transform = `rotate(${angle+90}deg)`;
     return directions[index];
 }
