@@ -3,15 +3,24 @@
     height: 15%;
     width: 15%;
 }
-
 #weatherWindToday{
     border-radius: 0%;
-    height: 5%;
-    width: 5%;
+    height: 3%;
+    width: 3%;
     float: none;
 }
 #wind{
     display: inline-block;
+}
+#development{
+    text-align: center;
+    color: red;
+}
+#cityList{
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
 }
 .weatherHeader{
     text-align: center;
@@ -23,12 +32,21 @@
     padding-top: 1%;
     display: -webkit-box;
 }
-img { 
+.searchContainer{
+    text-align: center;
+    display: block;
+    position: relative;
+}
+input,button{
+    border: 1px solid grey;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+img{ 
     float: left;
     height: 100%;
 }
-
-#development{
-    text-align: center;
-    color: red;
+button{
+    color: white;
 }

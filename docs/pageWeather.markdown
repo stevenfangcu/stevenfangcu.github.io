@@ -13,7 +13,14 @@
                 <p id="wind" class="weatherBody"></p>
                 <img src="" id="weatherWindToday"/>
             </div>
-            <button onclick="weatherAPI()">Weather!</button>
+        </div>
+        <div class="searchContainer">
+            <form autocomplete="off" >
+                <h1 id="searchHeader" class="weatherHeader">Search Weather In A Canadian City Here</h1>
+                <input id="cityInput" type="text" placeholder="City.." onkeyup="showResults()"/>
+                <button onclick="weatherAPI()">Weather!</button>
+                <div id="result"></div>
+            </form>
         </div>
     </body>
 </html>
