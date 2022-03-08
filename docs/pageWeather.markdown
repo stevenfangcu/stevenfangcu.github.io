@@ -15,12 +15,12 @@
             </div>
         </div>
         <div class="searchContainer">
-            <form autocomplete="off" >
-                <h1 id="searchHeader" class="weatherHeader">Search Weather In A Canadian City Here</h1>
+            <h1 id="searchHeader" class="weatherHeader">Search Weather In A Canadian City Here</h1>
+            <div class="autocomplete">
                 <input id="cityInput" type="text" placeholder="City.." onkeyup="showResults()"/>
                 <button onclick="weatherAPI()">Weather!</button>
                 <div id="result"></div>
-            </form>
+            </div>
         </div>
     </body>
 </html>
