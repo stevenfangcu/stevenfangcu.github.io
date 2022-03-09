@@ -59,6 +59,7 @@ input,button{
 img{ 
     float: left;
     height: 100%;
+    padding: 3px;
 }
 button{
     color: white;
